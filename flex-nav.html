@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create navigation bar with flexbox CSS Layout</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Fasthand&family=Moul&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Battambang", system-ui;
+        font-weight: bold;
+      }
+      button {
+        cursor: pointer;
+        background-color: darkblue;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        width: 100px;
+        border-radius: 10px;
+      }
+      .navbar-main {
+        display: flex;
+        width: 100vw;
+        overflow: hidden;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        /* background: #fffcfc; */
+        /* background: radial-gradient(
+          circle,
+          rgba(158, 149, 153, 1) 0%,
+          rgba(148, 187, 233, 1) 100%
+        ); */
+        background: #bdc3c7; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #464f57,
+          #bdc3c7
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #fbfbfc,
+          #d6dbdf
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      .navbar-child > ul {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 25px;
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 60px;
+        background-image: url("./Photo/PICTURE.png");
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .coffee-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+      }
+      .coffee-pic > img {
+        width: 400px;
+        height: 400px;
+        object-fit: contain;
+      }
+      footer {
+        background-color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar-main">
+      <div>
+        <img
+          src="https://i.pinimg.com/736x/cc/b2/4b/ccb24b1a65dce47f3e813fa4ca76d979.jpg"
+          alt="logo"
+          width="50px"
+          height="60px"
+        />
+      </div>
+      <div class="navbar-child">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FQAs</a></li>
+        </ul>
+      </div>
+      <div>
+        <button>login</button>
+      </div>
+    </nav>
+    <!-- Shop section -->
+    <section class="coffee-content">
+      <div class="coffee-pic">
+        <img
+          src="https://img.freepik.com/free-photo/delicious-quality-coffee-cup_23-2150691273.jpg"
+          alt="Coffee"
+        />
+      </div>
+      <div>
+        <h1>No Coffee <br />No Energy</h1>
+      </div>
+    </section>
+    <section class="coffee-content">
+      <div class="coffee-pic">
+        <img
+          src="https://media.istockphoto.com/id/1152767411/photo/cup-of-coffee-latte-isolated-on-white-background-with-clipping-path.jpg?s=612x612&w=0&k=20&c=24HBAvkahjo8LKV-6DRUklQzPJUqxjmVlBFtV5BG4tU="
+          alt="Coffee"
+        />
+      </div>
+      <div>
+        <h1>No Coffee <br />No Energy</h1>
+      </div>
+    </section>
+    <section class="coffee-content">
+      <div class="coffee-pic">
+        <img
+          src="https://media.istockphoto.com/id/947762906/photo/hot-coffee-cappuccino-latte-art-isolated-on-white-background-clipping-path-included.jpg?s=612x612&w=0&k=20&c=JaGusOUZ-7wjQaSAufdMpH0IND3WmYW45sAQRwMwoeY="
+          alt="Coffee"
+        />
+      </div>
+      <div>
+        <h1>No Coffee <br />No Energy</h1>
+      </div>
+    </section>
+    <footer>
+      <p>© 2023 Coffee Gallery. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
